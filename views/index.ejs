@@ -1,0 +1,27 @@
+<%- include('partial/header.ejs') %>
+  <%- include('partial/error.ejs') %>
+    <div class="container w-3/6 rounded-xl border-2 pl-10 pb-5">
+      <h3 class="text-4xl">Sign Up</h3>
+      <form action="/sign_up" method="post" class="flex flex-col justify-evenly gap-1">
+
+
+        <label for="first_name">first name</label>
+        <input type="text" placeholder="first_name" name="first_name" id="first_name" class='inputs'>
+
+        <label for="surname">surname</label>
+        <input type="text" placeholder="surname" name="surname" class='inputs'>
+
+
+        <label for="username">username</label>
+        <input type="text" placeholder="username (email)" name="username" class='inputs'>
+
+        <label for="password">password</label>
+        <input type="password" placeholder="password" name="password" class='inputs'>
+
+        <label for="repassword">confirm your password</label>
+        <input type="password" placeholder="enter your password again" name="repassword" class='inputs'>
+        <div><button type="submit"
+            class=" rounded-lg  bg-teal-500 hover:bg-teal-700 w-24 h-12 mt-4 text-white">login</button></div>
+      </form>
+    </div>
+    <%- include('partial/footer.ejs') %>

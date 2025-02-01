@@ -1,0 +1,23 @@
+<%- include('partial/header.ejs') %>
+  <%- include('partial/nav.ejs') %>
+    <div>
+      <ul>
+        <li>Name: <span>
+            <%= user.fullname %>
+          </span></li>
+        <li>manage your post:
+          <a href="/msgBoard/<%= user.id%>" class="block text-blue-500 underline"> add new post</a>
+          <a href="#" class="block text-blue-500 underline"> delete all post</a>
+          <a href="#" class="block text-blue-500 underline"> change the content</a>
+        </li>
+        <li>admin:
+          <% if (user.admin) { %>
+            <span>user.admin</span>
+
+            <% } else {%>
+              <a href="#" class="text-indigo-500 underline">become a admin</a>
+              <% } %>
+        </li>
+      </ul>
+    </div>
+    <%- include('partial/footer.ejs') %>

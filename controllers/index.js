@@ -1,0 +1,6 @@
+export { getIndex } from './login.js'
+export { handleSignUp, validationRules, validateMsg, handleMsgValidation } from './formValidation.js'
+export { handleLogin } from './login.js'
+export { renderMain } from './main.js'
+export { renderMsg, handleMsg, delMsg, } from './message.js'
+export { renderProfile } from './profile.js'
